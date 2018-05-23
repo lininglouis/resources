@@ -100,11 +100,64 @@ use  vec.shape  or  vec.get_shape() to get the shape of the tensor
 tf.assign is defining a assignment operation. When do tf.assign(x, 1) or x.assign(1).
 the assignment is not exectuted, until the session begins.
 
-assign_op = x.assign(1)
-sess.run(assign_op)  # or `assign_op.op.run()`
-print(x.eval())
+```python
+with tf.Session() as sess:
+    print(x.eval)
+    assign_op = x.assign(1)
+    sess.run(assign_op)  # or `assign_op.op.run()`
+    print(x.eval())
+```
+
+###broadcasting
+If an operation requires a size [3, 5, 6] tensor, any of the following sizes can serve as an operand:
+[1, 5, 6]
+[3, 1, 6]
+[3, 5, 1]
+[1, 1, 1]
+[5, 6]
+[1, 6]
+[6]
+[1]
+[]
 
 
+###reshape
+tf.reshape(A, target_size)
+
+
+### tf.cast
+tf.cast(A, dtype=tf.float32)
+
+
+### tf.concat
+tf.concat([A, B], axis=1)
+
+
+###Variable
+tf.constant()
+tf.Variable()
+
+
+
+### sum tf.reduce_sum
+tf.reduce_sum(values, axis=1)
+
+
+
+
+###random int
+numpy
+np.random.randint(low=0, high=6, size=(10,2))
+tf.random_uniform(shape=(10,2), minval, maxval=7, dtype=tf.int32)
+
+The initilization of variable is not automatic, hence, we need sess.run(tf.global_variables_initilizer()) to help us initialize the weights.
+One peculiarity of TensorFlow is that **variable initialization is not automatic.**
+```python
+tf.Variable(tf.random_normal(size=(2,3), mean=0, stddev=1.0))
+```
+
+
+    
 
 ### resource links
 https://github.com/Kyubyong/tensorflow-exercises/blob/master/Math_Part1.ipynb
