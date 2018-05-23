@@ -69,7 +69,7 @@ if not state this InteractiveSession, the tensor.eval() will notwork
 
 ### difference of Session and Graph
 
-Graph need Session to compute.
+Grapha must run within a Session
 
 Three steps run tensorflow
 1) create tensor
@@ -80,6 +80,30 @@ Three steps run tensorflow
 
 ### remember
 tf.global_variables_initializer()
+
+with tf.Graph().as_default():
+    pass
+with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
+
+
+### get shape
+vec = tf.constant(np.array([2,3,4]))
+use  vec.shape  or  vec.get_shape() to get the shape of the tensor
+
+
+### Operation
+'tf.add(A,B)'  and  'A + B '  both works
+
+
+### tf.assign use
+tf.assign is defining a assignment operation. When do tf.assign(x, 1) or x.assign(1).
+the assignment is not exectuted, until the session begins.
+
+assign_op = x.assign(1)
+sess.run(assign_op)  # or `assign_op.op.run()`
+print(x.eval())
+
 
 
 ### resource links
