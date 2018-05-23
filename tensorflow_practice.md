@@ -85,7 +85,7 @@ tf.global_variables_initializer()
 ### resource links
 https://github.com/Kyubyong/tensorflow-exercises/blob/master/Math_Part1.ipynb
 https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/convolutional_network_raw.py
-
+https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow/toolkit
 
 
 
