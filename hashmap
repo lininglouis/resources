@@ -1,2 +1,11 @@
 简单地说，HashMap 在底层将 key-value 当成一个整体进行处理，这个整体就是一个 Entry 对象。HashMap 底层采用一个 Entry[] 数组来保存所有的 key-value 对，当需要存储一个 Entry 对象时，会根据hash算法来决定其在数组中的存储位置，在根据equals方法决定其在该数组位置上的链表中的存储位置；当需要取出一个Entry时，
 也会根据hash算法找到其在数组中的存储位置，再根据equals方法从该位置上的链表中取出该Entry。
+
+
+hashmap put过程
+
+1.根据key字串计算hash值
+hash = hash(key.hashCode())
+
+2.使用table[hash] 找到对应的链表结构 Entry<K,V> 
+保存K-V键值对的链表结构
