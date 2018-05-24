@@ -1,8 +1,14 @@
 softmax
+1. 反馈求导与logistic回归一致
+2. 乘性变成加性。
+
 
 hardmax
 
 
+
+
+softmax和multi-nomial logistic regression应用场景
 softmax和多个logistic回归通过叠加也同样可以实现多分类的效果：
 softmax回归进行的多分类，类与类之间是互斥的，即一个输入只能被归为一类；
 多个logistic回归进行多分类，输出的类别并不是互斥的，即"苹果"这个词语既属于"水果"类也属于"3C"类别。
