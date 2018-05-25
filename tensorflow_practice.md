@@ -157,6 +157,8 @@ tf.Variable(tf.random_normal(size=(2,3), mean=0, stddev=1.0))
 ```
 
 
+### tensorflow graph
+ tensorflow可以通过tf.Graph函数生成新的计算图。不同计算图上的张量和运算都不会共享
     
 
 ### resource links
