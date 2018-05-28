@@ -1,0 +1,11 @@
+sudo docker pull xview2018/baseline:vanilla-v1-1
+sudo docker tag  xview2018/baseline:vanilla-v1-1  sandiao/baseline:v1
+
+sudo docker run sandiao/first bash -c './run.sh /home/ubuntu/xview/train_images/5.tif /tmp && cat /tmp/5.tif.txt'
+sudo docker run sandiao/first bash -c './run.sh /5.tif /tmp && cat /tmp/5.tif.txt'
+
+sudo docker run -it   sandiao/baseline:v1  /bin/bash
+sudo docker cp ./vanilla.pb sandiao/baseline:/vanilla.pb
+
+difference of docker images and commands
+
