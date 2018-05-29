@@ -29,3 +29,18 @@ You need to login "sudo docker login" before push your docker image
 ### list
 docker container ls -a
 docker images
+
+
+### 设定镜像从头构建一个container，并使用bin/bash进入这个container
+docker run -it sandiao/xview:v2  /bin/bash
+
+
+### restart a docker after it has been exited
+You can restart an existing container after it exited and your changes are still there.
+docker start  `docker ps -q -l` # restart it in the background
+docker attach `docker ps -q -l` # reattach the terminal & stdin
+
+
+### 启动一个Volume_Container容器，包含两个数据卷
+docker run -v /data --name Volume_Container sandiao/xview:v2  /bin/bash
+  
