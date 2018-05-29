@@ -9,3 +9,6 @@ sudo docker cp ./vanilla.pb sandiao/baseline:/vanilla.pb
 
 difference of docker images and commands
 
+
+
+You need to login "sudo docker login" before push your docker image
