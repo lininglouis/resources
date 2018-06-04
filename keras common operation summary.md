@@ -1,23 +1,24 @@
+``` python
 ### model
 
 model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
-### loss, optimizer, metrics 
+# three parameters loss, optimizer, metrics 
 
 model.fit(X_train, y_train, batch_size=16, epochs=3)
 
-#loss
+### loss
 loss = ['categorical_crossentropy', 'mean_squared_error', 'binary_crossentropy']
 
-#optimizer
+### optimizer
 from keras import optimizers
 opt = optimizers.SGD(lr=1e-6, momentum=0, decay=0)
 optimizers.Adam(b1, b2, decay)
 
-#one hot
+#### one hot
 keras.utils.to_categorical(y=[1,2,3], num_classes=3)
 
 
-#weights initialization
+### weights initialization
 from keras import initializers
 initializers.random_normal(mean, stddev)
 initializers.he_normal(seed=42)
@@ -29,3 +30,4 @@ initializers.Ones()
 optimizer.adam   design
 l2 norm implementation
 
+```
