@@ -56,6 +56,6 @@ activation可以接字符串'relu'  也可以接具体激活函数 from keras im
 
 ### todo------------------------------
 optimizer.adam   design
-l2 norm implementation
+l2 norm implementation  和 gradient clipping
 
 
