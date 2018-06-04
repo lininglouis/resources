@@ -45,7 +45,8 @@ from keras import backend as K.
 
 
 ### 正则化
-Conv2D(filters, kernel_size, l2_regulizers
+Conv2D(filters, kernel_size, kernel_regularizer=regularizers.l2(0.01))
+ 
 
 
 
