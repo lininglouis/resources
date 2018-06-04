@@ -4,7 +4,9 @@
 model.compile(optimizer=opt, loss='categorical_crossentropy', metrics=['accuracy'])
 # three parameters loss, optimizer, metrics 
 
-model.fit(X_train, y_train, batch_size=16, epochs=3)
+model.fit(X_train, y_train, batch_size=16, epochs=3
+
+model.summary()
 
 ### loss
 loss = ['categorical_crossentropy', 'mean_squared_error', 'binary_crossentropy']
