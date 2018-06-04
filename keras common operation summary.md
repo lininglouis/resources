@@ -59,6 +59,10 @@ There are two key points to remember when using the TimeDistributed wrapper laye
 Helpful Explanations:
 https://datascience.stackexchange.com/questions/10836/the-difference-between-dense-and-timedistributeddense-of-keras
 
+TimeDistributed input必须是3D的。
+因为首先sample 第0维度， timestep第1个维度，每个timestep内部的具体数据在第2个维度或者更高的维度。
+所以至少有三个维度
+同样TimeDistribute只针对每个timestemp内部进行相同处理，也就是每个timestemp都会返回一个结果。因此batch,timestep, output也至少是三个维度。
 
 ### Experience
 dropout的位置？
