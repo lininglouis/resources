@@ -47,7 +47,17 @@ from keras import backend as K.
 ### 正则化
 Conv2D(filters, kernel_size, kernel_regularizer=regularizers.l2(0.01))
  
+ 
+### TimeDistributed
+一个wrapper，对每个step做相同处理
 
+必要条件
+There are two key points to remember when using the TimeDistributed wrapper layer:
+1) **The input must be (at least) 3D.** This often means that you will need to configure your last LSTM layer prior to your TimeDistributed wrapped Dense layer to return sequences (e.g. set the “return_sequences” argument to “True”).
+2) **The output will be 3D.** This means that if your TimeDistributed wrapped Dense layer is your output layer and you are predicting a sequence, you will need to resize your y array into a 3D vector.
+
+Helpful Explanations:
+https://datascience.stackexchange.com/questions/10836/the-difference-between-dense-and-timedistributeddense-of-keras
 
 
 ### Experience
