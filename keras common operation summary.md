@@ -35,11 +35,17 @@ initializers.he_normal(seed=42)
 initializers.Zeros()
 initializers.Ones()
 
+Dense(units=512, \
+      kernel_initializer = keras.initializers.random_normal(stddev=0.05), \
+      bias_initializer = keras.initializers.Ones())
 
 ### activation
 Activation('relu'), K.relu
-
 from keras import backend as K.
+
+
+### 正则化
+Conv2D(filters, kernel_size, l2_regulizers
 
 
 
