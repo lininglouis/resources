@@ -168,6 +168,11 @@ https://developers.google.com/machine-learning/crash-course/first-steps-with-ten
 
 
 
+### 模型三种节点
+placeholder占位符，用于数据输入节点
+variable 存储节点，存储模型
+operation 操作符
+
 
 
 
