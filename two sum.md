@@ -1,5 +1,9 @@
 
-two sum ii
+### two sum ii
+* two pointer方法适用于有序sorted的list， 使用之前需要先排序
+* double for loop方法比较稳定，实现简单，就是复杂度高
+* hash 方法对于 two sum iii 这种只要求有没有true和false，而不是返回index的情况，实现非常简单，关键是要建立hash[nodeval] = nodeindex 的映射，因为最后是返回index的
+
 
 ```python
 class Solution:
