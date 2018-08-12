@@ -3,15 +3,16 @@
 研发
 * [ ] T 优图 ailab
 * [ ] A IDST AIlab
+* [ ] 头条 ailab （投了内推）
 * [ ] 商汤
+* [ ] 海康（晚上投）
 * [ ] hulu
 * [ ] DJI
 * [ ] 网易 （投了 已经测评）
-* [ ] 海康（晚上投）
-* [ ] 头条 ailab （投了内推）
+
 
 *硬件图像感知
-* [ ] B 无人车
+* [ ] Bd 无人车
 * [x] Road Star tracking failed (Go to Learn MOTA !  Review D&T paper!)
 * [ ] DJI
 * [ ] momenta
